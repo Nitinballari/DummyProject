@@ -1,0 +1,27 @@
+
+<div class="calculator">
+    
+ <!-- <input type="text" [value]="firstNo" class="scr1"> -->
+    <input type="text" [value]="exp" class="scr2">
+    <div class="keys">
+        <button type="button" class="No" (click)="getNumber('7')">7</button>
+        <button type="button" class="No" (click)="getNumber('8')">8</button>
+        <button type="button" class="No" (click)="getNumber('9')">9</button>
+        <button type="button" class="op" (click)="getOpr('+')">+</button>
+        <button type="button" class="No" (click)="getNumber('4')">4</button>
+        <button type="button" class="No" (click)="getNumber('5')">5</button>
+        <button type="button" class="No" (click)="getNumber('6')">6</button>
+        <button type="button" class="op" (click)="getOpr('-')">-</button>
+        <button type="button" class="No" (click)="getNumber('1')">1</button>
+        <button type="button" class="No" (click)="getNumber('2')">2</button>
+        <button type="button" class="No" (click)="getNumber('3')">3</button>
+        <button type="button" class="op" (click)="getOpr('*')">x</button>
+        <button type="button" class="op" (click)="getOpr('=')">=</button>
+        <button type="button" class="No" (click)="getNumber('0')">0</button>
+        <button type="button" class="op" (click)="clear()">AC</button>
+        <button type="button" class="op" (click)="getOpr('/')">/</button>
+    </div>
+</div>
+<div>
+    
+</div>

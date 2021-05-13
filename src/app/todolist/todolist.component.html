@@ -1,0 +1,46 @@
+<div class="heading-section">
+  <h1 class="heading-text ">MY TO-DO LIST</h1>
+</div>
+
+<div class="container ">
+  <div class="add-todo-box">
+
+    <form #tdform="ngForm" (ngSubmit)="onsubmit(tdform)">
+      <div class="form-group">
+        <label for="exampleInputEmail1">New Todo</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="usertodo"
+          ngModel #usertodo="ngModel" placeholder="add new todo here......" required>
+
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!tdform.valid">Add</button>
+    </form>
+  </div>
+
+
+  <div class="container row ">
+    <div class="todos-list ">
+
+      <div class="todo-item d-flex justify-content-between" *ngFor="let todo of todolist">
+
+        <div><input type="checkbox" class="check" name="{{todo.id}}" [(ngModel)]="todo.isChecked" (change)="onchange()">
+        </div>
+
+        <div class="todo-text">
+          <h5 [ngClass]="todo.isChecked ? 'strikethrough' : 'null'">{{todo.work}}</h5>
+        </div>
+
+        <div class="Alarm" *ngIf="dialogValue">
+          <b>Alarm set at </b>: {{dialogValue | date:'medium'}}
+        </div>
+        <div><button class="alarmset"data-toggle="modal" data-target="#myModal" (click)="openDialog()" name="{{todo.id}}">Set
+            Alarm</button></div>
+      </div>
+
+      <div *ngIf="todolist?.length">
+        <button class="btn btn-danger" (click)="deletechecked()">Delete</button>
+      </div>
+      <div class="timer">{{demo}}</div>
+
+    </div>
+  </div>
+</div>

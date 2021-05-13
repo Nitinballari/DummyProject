@@ -1,0 +1,73 @@
+input.ng-touched.ng-invalid{
+    border: 1px solid red;
+}
+.heading-section{
+    padding: 18px;
+    background: linear-gradient(to right, rgb(2, 228, 171), rgb(74, 215, 240));
+}
+
+.heading-text{
+    text-align: center;  
+    color:rgb(219, 81, 145) ;
+}
+
+.add-todo-box{
+    padding: 25px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.check{
+    border: 2px solid white;
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;  
+}
+
+ .container {
+    max-width: 800px;
+} 
+
+ .todo-item{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;  
+ }
+ .todo-text{
+     text-size-adjust: auto;
+ }
+ 
+ .abc{
+    float: right
+  }
+  .modal.Show{
+
+    display: block;
+}
+.button1{
+
+    font-size: 10px;
+}
+.Alarm{
+margin-left: 100px;
+   color: brown;
+}
+.strikethrough {
+    text-decoration: line-through;
+  }
+  .btn{
+    height: 30px; 
+    width: 60px; 
+    font-size: smaller;
+    
+    
+  }
+  .timer{
+
+    padding: 20px;
+
+  }
+  .alarmset{
+      margin-left: 30px;
+  }

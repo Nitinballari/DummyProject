@@ -1,0 +1,25 @@
+
+    .heading{
+        text-align: center;
+        
+        color: rgb(106, 29, 230);
+    }
+
+    .login-wrapper{
+    padding: 25px;
+        background: rgb(240, 237, 237);
+        border-radius: 4px;
+        box-shadow: 0 4px 12px rgba(black, 0.08);
+        max-width: 500px;
+        margin-left: 400px;
+        margin-top: 50px;
+        
+    }
+    input.ng-invalid.ng-touched {
+        border: 1px solid red;
+      }
+      .err{
+        
+          font-size:15px;
+          background-color: lightsalmon
+      }

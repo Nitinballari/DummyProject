@@ -1,0 +1,33 @@
+.calculator{ 
+    background-color: rgb(129, 126, 122);
+    border-radius: 5px;
+    width: 310px;
+    margin-top: 10px;
+    left: 35%;
+    position: absolute;
+    padding: 10px;
+}
+
+button{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.scr1{
+    width: 100%;
+    font-size: 60px;
+    height: 70px;
+    background-color:rgb(37, 34, 34);
+    color: white;
+    text-align: right; 
+}
+.scr2{
+    width: 100%;
+    font-size: 60px;
+    height: 70px;
+    background-color:rgb(88, 71, 71);
+    color: white;
+    text-align: right; 
+}

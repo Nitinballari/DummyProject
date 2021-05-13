@@ -1,0 +1,30 @@
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+
+      <div class="modal-header">
+        <h4 class="modal-title">Do you Want to Set Reminder Alarm</h4>
+
+      </div>
+
+      <div class="modal-body">
+<div>{{fromPage}}</div>
+        <form #loginform="ngForm" (ngSubmit)="onsubmit(loginform)">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Enter Time</label>
+            <input type="datetime-local" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email1"
+              #email1="ngModel" [(ngModel)]="fromDialog" ngModel placeholder="12:00" required>
+          </div>
+
+
+          <button type="submit" class="btn btn-primary" [disabled]="!loginform.valid" data-dismiss="modal"
+            (click)="closeDialog()">Yes</button>
+          <button type="button" class="btn btn-danger abc" data-dismiss="modal">No</button>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
